@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/main_background"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Add Your Testimony Here"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Full Name(Optional)"/>
+        <EditText
+            android:id="@+id/txt_your_name"
+            android:layout_width="match_parent"
+            android:hint="Type Your Name Here"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Your Testimony *"/>
+        <EditText
+            android:id="@+id/txt_your_testimony"
+            android:layout_width="match_parent"
+            android:hint="write your testimony here"
+            android:padding="10dp"
+            android:gravity="top"
+            android:background="#ffffff"
+            android:layout_height="150dp" />
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Submit Testimony"/>
+    </LinearLayout>
+</LinearLayout>

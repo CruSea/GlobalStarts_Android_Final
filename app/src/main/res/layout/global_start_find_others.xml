@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/global_start_find_others"
+                    android:id="@+id/imageView" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Find Others to Help"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:text="Jesus chose who were teachable and willing to count the cost."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:text="You will also need people who will join you in the mission to reach high school students. There are many opportunities to help, such as being a part of your prayer team, helping to reach and disciple students, giving  nancially, providing access to the schools, helping with special events, providing food, giving administrative assistance, and so much more."/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorPrimaryDark">
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/global_start_find_others"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorPrimaryDark">
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:text="Here are some things to look for in volunteers"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="100dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@color/colorAccent"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/text_size1"
+                            android:layout_marginLeft="20dp"
+                            android:textStyle="bold"
+                            android:text="A growing relationship with God and reliance on the power of the Holy Spirit"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@color/colorAccent"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/text_size1"
+                            android:layout_marginLeft="20dp"
+                            android:textStyle="bold"
+                            android:text="A heart for high school students"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@color/colorAccent"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/text_size1"
+                            android:layout_marginLeft="20dp"
+                            android:textStyle="bold"
+                            android:text="Faith to initiate relationships and share the gospel boldly"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@color/colorAccent"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/text_size1"
+                            android:layout_marginLeft="20dp"
+                            android:textStyle="bold"
+                            android:text="A good moral and spiritual role model"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@color/colorAccent"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/text_size1"
+                            android:layout_marginLeft="20dp"
+                            android:textStyle="bold"
+                            android:text="Time: Those who work directly with students should give at
+least 5 – 10 hours a week."/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="right"
+            android:text="Next"/>
+        <Button
+            android:id="@+id/btn_take_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="left"
+            android:text="Take Action"/>
+    </FrameLayout>
+</FrameLayout>

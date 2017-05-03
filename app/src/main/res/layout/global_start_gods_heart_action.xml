@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:minWidth="300dp"
+    android:minHeight="400dp"
+    android:layout_height="fill_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:text="Taking Action"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@color/colorAccent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:text="When you look at teenagers today, what grieves your heart?"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@color/colorAccent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:text="What is your vision for the teenagers of your country?"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@color/colorAccent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:text="What potential do you see in them?"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@color/colorAccent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:text="How can you involve teenagers in your country to reach their schools and communities; their country and the world?"/>
+    </LinearLayout>
+</LinearLayout>

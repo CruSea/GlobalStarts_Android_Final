@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/global_start_"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Can you imagine a day when the teenagers of your country would have the opportunity to"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="2dp"
+                   android:layout_marginLeft="30dp"
+                   android:layout_marginRight="30dp"
+                   android:layout_marginBottom="10dp"
+                   android:background="@color/colorPrimaryDark">
+
+               </LinearLayout>
+
+                <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_marginLeft="40dp"
+                   android:gravity="center_vertical"
+                   android:layout_height="wrap_content">
+                   <ImageView
+                       android:layout_width="10dp"
+                       android:layout_height="10dp"
+                       android:background="@color/colorAccent"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textColor="#000000"
+                       android:textSize="@dimen/text_size1"
+                       android:layout_marginLeft="10dp"
+                       android:textStyle="bold"
+                       android:text="Hear the gospel"/>
+               </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@color/colorAccent"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size1"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:text="Respond by faith"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@color/colorAccent"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size1"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:text="Walk with God"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@color/colorAccent"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size1"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:text="Become spiritual multipliers"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorPrimaryDark">
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size2"
+                    android:text="If that is your desire or if you dare to believe God to raise up teenagers to become leaders on their campuses and to be involved in helping reach the world, then get on your knees and pray! With faith and dependence on the Lord, take these principles and use them in your country and watch what God will do in and through the lives of teenagers."/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="100dp"
+                android:layout_height="wrap_content"
+                android:text="What is God`s Heart For Teenagers"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
