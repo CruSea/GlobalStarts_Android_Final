@@ -42,22 +42,28 @@
             </ListView>
         </LinearLayout>
     </FrameLayout>
+
     <RelativeLayout
+        android:layout_marginTop="8dp"
         android:id="@+id/rlt_bottom"
         android:layout_width="match_parent"
         android:layout_alignParentBottom="true"
         android:background="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:id="@+id/card_view"
             android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:layout_margin="3dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="20dp"
+                android:paddingBottom="2dp"
                 android:paddingTop="10dp"
                 android:background="@color/colorPrimaryDark"
                 android:paddingLeft="10dp"
@@ -66,34 +72,91 @@
                 android:orientation="horizontal"
                 >
 
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/news"/>
                 <Button
                     android:id="@+id/btn_news"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:textSize="13dp"
                     android:text="News"
                     android:layout_weight="1"/>
+            </LinearLayout>
+
+             <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/testimony"/>
                 <Button
                     android:id="@+id/btn_testify"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
-                    android:text="Testify"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:text="Share Story"
                     android:layout_weight="1"/>
-                <Button
-                    android:id="@+id/btn_contact"
-                    android:layout_width="match_parent"
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
-                    android:text="Contact"
-                    android:layout_weight="1"/>
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/profile"/>
+
                 <Button
                     android:id="@+id/btn_about"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:textSize="13dp"
                     android:text="About"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+             <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/contact"/>
+                <Button
+                    android:id="@+id/btn_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:text="Contact"
                     android:layout_weight="1"/>
+             </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>

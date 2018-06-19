@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "854438979646-emfi1qim4gtna7r1fujvktfn4us80kbq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ds.gcme.com.globalstart",
+            "certificate_hash": "49a7e39aebab62dd24a6eb4f8463d69e07e6e66d"
+          }
+        },
+        {
           "client_id": "854438979646-2epip84cph5l8thbbnbjau8kvm8o5mep.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

@@ -11,11 +11,13 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import ds.gcme.com.globalstart.GlobalStart.BuildMovementActivity;
 import ds.gcme.com.globalstart.GlobalStart.FindOthersActivity;
 import ds.gcme.com.globalstart.GlobalStart.GlobalStartActivity;
 import ds.gcme.com.globalstart.GlobalStart.GodsHeartActivity;
 import ds.gcme.com.globalstart.GlobalStart.KnowTheGoalActivity;
 import ds.gcme.com.globalstart.GlobalStart.LearAboutActivity;
+import ds.gcme.com.globalstart.GlobalStart.MovementPlan;
 import ds.gcme.com.globalstart.GlobalStart.PrayerActivity;
 import ds.gcme.com.globalstart.Models.MainMenuItem;
 import ds.gcme.com.globalstart.R;
@@ -55,9 +57,7 @@ public class ListViewAdapter extends BaseAdapter {
         View view = layoutInflater.inflate(R.layout.main_menu_item,null);
         LinearLayout layout = (LinearLayout) view.findViewById(R.id.lyt_main_layout);
         TextView Title = (TextView) view.findViewById(R.id.txt_menu_title);
-        TextView SubTitle = (TextView) view.findViewById(R.id.txt_sub_menu_title);
         Title.setText(menuItemList.get(position).getTitile());
-        SubTitle.setText(menuItemList.get(position).getSubTitle());
 
         layout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,6 +79,14 @@ public class ListViewAdapter extends BaseAdapter {
                     myContext.startActivity(intent);
                 }else if(position == 5){
                     Intent intent = new Intent(myContext, KnowTheGoalActivity.class);
+                    myContext.startActivity(intent);
+                }
+                else if(position == 6){
+                    Intent intent = new Intent(myContext, BuildMovementActivity.class);
+                    myContext.startActivity(intent);
+                }
+                else if(position == 7){
+                    Intent intent = new Intent(myContext, MovementPlan.class);
                     myContext.startActivity(intent);
                 }
             }

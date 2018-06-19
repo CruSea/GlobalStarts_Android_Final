@@ -3,17 +3,15 @@ package ds.gcme.com.globalstart.GlobalStart;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 
 import ds.gcme.com.globalstart.R;
+import ds.gcme.com.globalstart.Util;
 
 
 /**
@@ -28,6 +26,9 @@ public class GodsHeartActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.global_start_gods_heart);
+        setSupportActionBar((Toolbar) findViewById(R.id.global_start_toolbar));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         myContext = this;
         myActivity = this;
         btnNext = (Button) findViewById(R.id.btn_next);
@@ -43,24 +44,9 @@ public class GodsHeartActivity extends AppCompatActivity {
         btnAction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ShowActionDialog();
+                Util.ShowActionDialog(GodsHeartActivity.this,  getString(R.string.take_action_god_heart));
             }
         });
     }
-    public void ShowActionDialog(){
-        Rect displayRectangle = new Rect();
-        Window window = myActivity.getWindow();
-        window.getDecorView().getWindowVisibleDisplayFrame(displayRectangle);
 
-
-        final AlertDialog.Builder builder = new AlertDialog.Builder(myContext);
-        LayoutInflater layoutInflater = (LayoutInflater) myContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = layoutInflater.inflate(R.layout.global_start_gods_heart_action,null);
-        view.setMinimumWidth((int)(displayRectangle.width() * 1.0f));
-//        view.setMinimumHeight((int)(displayRectangle.height() * 0.9f));
-//        builder.setTitle(R.string.app_name);
-//        builder.setIcon(R.mipmap.ic_launcher);
-        builder.setView(view);
-        builder.show();
-    }
 }

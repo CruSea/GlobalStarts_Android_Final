@@ -7,6 +7,7 @@
     android:layout_marginLeft="10dp"
     android:minWidth="300dp"
     android:minHeight="400dp"
+    android:padding="15dp"
     android:layout_height="fill_parent">
     <TextView
         android:layout_width="match_parent"

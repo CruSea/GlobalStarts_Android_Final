@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import ds.gcme.com.globalstart.R;
+import ds.gcme.com.globalstart.Util;
 
 /**
  * Created by bengeos on 5/3/17.
@@ -16,7 +17,7 @@ import ds.gcme.com.globalstart.R;
 
 public class BeginWithActivity extends AppCompatActivity {
     private Context myContext;
-    private Button btnNext;
+    private Button btnNext, btnAction;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -30,6 +31,15 @@ public class BeginWithActivity extends AppCompatActivity {
                 Intent intent = new Intent(BeginWithActivity.this,FindOthersActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 myContext.startActivity(intent);
+            }
+        });
+
+
+        btnAction = (Button) findViewById(R.id.btn_take_action_begin_with);
+        btnAction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Util.ShowActionDialog(BeginWithActivity.this, "GODDDDDDD Test");
             }
         });
     }

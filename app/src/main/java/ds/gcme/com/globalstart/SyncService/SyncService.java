@@ -30,7 +30,6 @@ public class SyncService {
     private DatabaseReference myNewsRef;
     public static DatabaseReference myTestimonies;
 
-
     private Context myContext;
     private FirebaseAuth myAuth;
 

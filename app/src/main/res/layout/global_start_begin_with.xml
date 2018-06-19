@@ -89,6 +89,7 @@
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_gravity="bottom"
@@ -98,14 +99,16 @@
             android:id="@+id/btn_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/black"
+            android:background="@color/colorOrange"
             android:layout_gravity="right"
             android:text="Next"/>
         <Button
-            android:id="@+id/btn_take_action"
+            android:id="@+id/btn_take_action_begin_with"
+            android:background="@color/colorOrange"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/black"
             android:layout_gravity="left"
             android:text="Take Action"/>
     </FrameLayout>

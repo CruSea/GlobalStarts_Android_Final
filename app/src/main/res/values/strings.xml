@@ -1,3 +1,126 @@
 <resources>
     <string name="app_name">GlobalStart</string>
+    <string name="fb_link">https://www.facebook.com</string>
+    <string name="website_link">https://www.google.com</string>
+    <string name="movement_strategy">My Movement Strategy</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_news">News</string>
+    <string name="title_share_story">Share Story</string>
+    <string name="title_about">About</string>
+    <string name="title_contact">Contact</string>
+
+
+    <string name="build_spiritual_movement_1">
+        Jesus trained and equipped men and women and challenged them
+                                to help fulfll the Great Commission. Many of them were faithful to
+                                do what God had called them to do and that is the reason we know
+                                Jesus today. We want to continue that call by building spiritual
+                                movements!
+    </string>
+
+        <string name="build_spiritual_movement_2">
+              A spiritual movement is a group of students and adults who are
+        walking by faith in the power of the Holy Spirit, sharing their faith,
+        and discipling those who respond. Spiritual leaders are developed
+        and lives, campuses and countries are changed for eternity!
+    </string>
+        <string name="build_spiritual_movement_3">
+         We want to encourage students to fall in love with Jesus and
+    challenge them to become spiritual multipliers at their high schools
+    and then continue to multiply their faith for a lifetime!
+    </string>
+
+
+
+    <string name="take_action_god_heart">
+        •  When you look at teenagers today, what grieves your heart? \n \n
+        •  What is your vision for the teenagers of your country? \n \n
+        •  What potential do you see in them? \n \n
+        •  How do you want to see teenagers in your country reach their schools and communities; their country and the world? \n
+    </string>
+
+    <string name="take_action_learn">
+        1. Write a survey of 5-10 questions to get to know the teenage culture. Continue to survey as many students as you can and
+        never stop learning about students and their lives! \n
+    </string>
+
+      <string name="take_action_prayer">
+          1. When you see the needs of students, how does it motivate you to pray? "  \n\n
+          2. As you trust God to start and build a student movement, what prayer strategy will you develop?"
+    </string>
+
+    <string name="take_action_find_others">
+
+        1.	 Make a list of the needs you have and everyone who could join you in ministry: College students, teachers, parents,
+        churches, Christian teenagers, community people and others. Can you connect with other organizations? Churches? College
+        ministries? Remember, no idea is a bad idea! \n \n
+        2.	 Challenge them to the exciting opportunity of being a part of working with young people who are on God’s heart!
+    </string>
+
+    <string name="take_action_win1">
+
+        1.	 Write down as many target groups among teenagers that you know about.  \n \n
+        2.	 Think of ways that you would be able to connect with students from those target groups.  \n \n
+        3.	 Think of creative ways that you can gather each target group and share the gospel with them. \n \n
+        4.	 Don’t forget to involve Christian students to help plan the event, gather their friends, and share their testimonies or the gospel.  \n \n
+
+    </string>
+
+
+    <string name="take_action_win2">
+
+        1.	 What are the felt needs and the real needs of the school, the administration and the students? \n \n
+        2.	 List all the ways that you can serve the school so you can develop relationships and have an opportunity to share the Gospel. \n \n
+        3.	 Talk to the principal and teachers to oﬀer your help. \n \n
+        4.	 When you meet students, always ask for their contact information and set up appointments after school to share Christ with them. \n \n
+        5.	 In classrooms or large events, always have comment cards to get students contact information and interest in meeting with you. Set up appointments to share Christ with those who are interested. \n \n
+    </string>
+
+
+    <string name="take_action_win3">
+
+        1.	 Where are places that you could go to be around teenagers? Where do they gather together? Where do they spend their free time? In what groups outside of school do they participate? What are creative ways to meet students? \n \n
+        2.	 Go to where students are and develop relationships, praying that God will raise up spiritually interested students. \n \n
+        3.	 Where can you fnd Christian teenagers who you can challenge and train to reach out to their friends at school? \n \n
+        4.	 What churches you can work alongside or partner with to train their students? \n \n
+        5.	 What activities and outreaches can you have that Christian students can invite their friends to attend? \n \n
+    </string>
+
+    <string name="take_action_build">
+        1.	 Make a list of the biblical truths and spiritual disiplines that you want new belivers to know and understand. \n \n
+        2.	 What are ways that your discipleship of teenagers could be modeled after Jesus’ discipleship of His 12? \n \n
+        3.	 What are creative ways to teach them truths and train them to share their faith? \n \n
+        4.	 How can you utilize fun activities, discipleship groups, retreats and conferences to help develop disciples of Christ? \n \n
+    </string>
+
+    <string name="take_action_send">
+        1.	 What are ways that students can take ownership of the ministry and develop into multipliers of the faith? \n \n
+        2.	 What can you do to help develop students to be the leaders God desires them to be; those who will go into all the world and make disciples? \n \n
+    </string>
+
+
+       <string name="take_action_build_spiritual_movement">
+1.	 Teenagers can have a signifcant impact in their high
+schools. Will you pray for students who will come to
+Christ, be discipled and leave a lasting impact in their
+schools? \n \n
+2.	 Teenagers can leave their high schools and make an
+impact on their college campuses. Will you pray and trust
+God to develop disciples who will continue to grow and
+disciple others on their college campuses? \n \n
+3.	 Teenagers can be a part of helping fulfll the Great
+Commission for a lifetime. Will you pray and trust God
+to develop lifetime laborers who will go into all the world
+and make disciples of all nations? \n
+    </string>
+
+
+
+
+
+
 </resources>
