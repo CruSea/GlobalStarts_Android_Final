@@ -16,6 +16,10 @@ public class UserPrefManager {
     private static final String WIN = "win";
     private static final String BUILD = "build";
     private static final String SEND = "send";
+    private static final String VISION = "vision";
+
+    private static final String NEWS = "news";
+
 
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
@@ -71,6 +75,27 @@ public class UserPrefManager {
 
     public String getSend(){
         return pref.getString(SEND,"");
+    }
+
+
+    public void setVision(String win){
+        editor.putString(VISION, win);
+        editor.commit();
+    }
+
+    public String getVision(){
+        return pref.getString(VISION,"");
+    }
+
+
+
+    public void setNews(String news){
+        editor.putString(NEWS, news);
+        editor.commit();
+    }
+
+    public String getNews(){
+        return pref.getString(NEWS,"");
     }
 
 

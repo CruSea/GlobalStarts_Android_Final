@@ -17,7 +17,7 @@ import ds.gcme.com.globalstart.Util;
  */
 
 public class WinActivity extends AppCompatActivity {
-    private Button btnNext, btnAction1, btnAction2, btnAction3;
+    private Button btnNext, btnAction1, btnSowingWith, btnSowingWithout;
     private Context myContext;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -45,22 +45,23 @@ public class WinActivity extends AppCompatActivity {
             }
         });
 
-
-        btnAction2 = (Button) findViewById(R.id.btn_take_action_win2);
-        btnAction2.setOnClickListener(new View.OnClickListener() {
+        btnSowingWith = (Button) findViewById(R.id.btn_sowing_with);
+        btnSowingWith.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Util.ShowActionDialog(WinActivity.this, getString(R.string.take_action_win2));
+                Intent intent = new Intent(WinActivity.this, WinActivity_Sowing_With.class);
+                myContext.startActivity(intent);
             }
         });
 
-
-        btnAction3 = (Button) findViewById(R.id.btn_take_action_win3);
-        btnAction3.setOnClickListener(new View.OnClickListener() {
+        btnSowingWithout = (Button) findViewById(R.id.btn_sowing_without);
+        btnSowingWithout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Util.ShowActionDialog(WinActivity.this, getString(R.string.take_action_win3));
+                Intent intent = new Intent(WinActivity.this, WinActivity_Sowing_Without.class);
+                myContext.startActivity(intent);
             }
         });
+
     }
 }

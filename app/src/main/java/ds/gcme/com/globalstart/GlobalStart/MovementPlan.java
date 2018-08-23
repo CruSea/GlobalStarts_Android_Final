@@ -9,9 +9,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import ds.gcme.com.globalstart.PrefManagers.UserPrefManager;
 import ds.gcme.com.globalstart.R;
+import ds.gcme.com.globalstart.Util;
 
 /**
  * Created by bengeos on 5/3/17.
@@ -19,7 +21,7 @@ import ds.gcme.com.globalstart.R;
 
 public class MovementPlan extends AppCompatActivity {
     private Button btnNext, btnShare;
-    private EditText ed_prayer, ed_help, ed_win, ed_build, ed_send;
+    private EditText ed_prayer, ed_help, ed_win, ed_build, ed_send, ed_vision;
     private Context myContext;
 
     private UserPrefManager userPrefManager;
@@ -35,6 +37,7 @@ public class MovementPlan extends AppCompatActivity {
         ed_win = (EditText) findViewById(R.id.movement_win);
         ed_build = (EditText) findViewById(R.id.movement_build);
         ed_send = (EditText) findViewById(R.id.movement_send);
+        ed_vision = (EditText) findViewById(R.id.movement_my_vision);
 
         userPrefManager = new UserPrefManager(this);
 
@@ -50,12 +53,14 @@ public class MovementPlan extends AppCompatActivity {
                 String win_text = ed_win.getText().toString();
                 String build_text = ed_build.getText().toString();
                 String send_text = ed_send.getText().toString();
+                String vision_text = ed_vision.getText().toString();
 
                 userPrefManager.setMyPrayer(prayer_text);
                 userPrefManager.setMyHelp(help_text);
                 userPrefManager.setWin(win_text);
                 userPrefManager.setBuild(build_text);
                 userPrefManager.setSend(send_text);
+                userPrefManager.setVision(send_text);
 
             }
         });
@@ -66,15 +71,24 @@ public class MovementPlan extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String content = "Prayer Strategy: " + userPrefManager.getMyPrayer() + "\n \n" +
-                        "My Help:  " + userPrefManager.getMyHelp() + "\n \n" + "Win Plan: " + userPrefManager.getWin() + "\n \n" +
-                        "Build Plan : " + userPrefManager.getBuild() + "\n \n " + "Send Plan: " + userPrefManager.getSend();
-                Intent sharingIntent = new Intent(Intent.ACTION_SEND);
-                sharingIntent.setType("text/plain");
-                sharingIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.movement_strategy));
-                sharingIntent.putExtra(Intent.EXTRA_TEXT, content);
+                if(userPrefManager.getVision().equals("") || userPrefManager.getBuild().equals("") || userPrefManager.getMyHelp().equals("") ||
+                        userPrefManager.getMyPrayer().equals("") || userPrefManager.getSend().equals("") || userPrefManager.getWin().equals("") )
+                {
+                    Toast.makeText(MovementPlan.this, "Please complete each section first.", Toast.LENGTH_LONG).show();
+                }
+                else{
 
-                startActivity(Intent.createChooser(sharingIntent, getResources().getString(R.string.app_name)));
+                    String content = "My Vision: " + userPrefManager.getVision() + "\n \n" +
+                            "Prayer Strategy: " + userPrefManager.getMyPrayer() + "\n \n" +
+                            "My Help:  " + userPrefManager.getMyHelp() + "\n \n" + "Win Plan: " + userPrefManager.getWin() + "\n \n" +
+                            "Build Plan : " + userPrefManager.getBuild() + "\n \n " + "Send Plan: " + userPrefManager.getSend();
+                    Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+                    sharingIntent.setType("text/plain");
+                    sharingIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.movement_strategy));
+                    sharingIntent.putExtra(Intent.EXTRA_TEXT, content);
+
+                    startActivity(Intent.createChooser(sharingIntent, getResources().getString(R.string.app_name)));
+                }
             }
         });
 
@@ -86,5 +100,6 @@ public class MovementPlan extends AppCompatActivity {
         ed_win.setText(userPrefManager.getWin());
         ed_build.setText(userPrefManager.getBuild());
         ed_send.setText(userPrefManager.getSend());
+        ed_vision.setText(userPrefManager.getVision());
     }
 }

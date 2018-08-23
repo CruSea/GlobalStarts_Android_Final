@@ -28,7 +28,7 @@
                 android:id="@+id/global_start_image"
                 android:src="@drawable/global_start_find_others"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="match_parent"
                 android:scaleType="fitXY"
                 android:fitsSystemWindows="true"
                 app:layout_collapseMode="parallax"/>
@@ -97,7 +97,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="15dp"
-                            android:gravity="center_horizontal"
                             android:layout_marginRight="15dp"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -109,7 +108,6 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:textColor="@color/black"
-                            android:gravity="center_horizontal"
                             android:layout_marginTop="10dp"
                             android:textSize="16sp"
                             android:text="You will also need people who will join you in the mission to reach high school students. There are many opportunities to help, such as being a part of your prayer team, helping to reach and disciple students, giving financially, providing access to the schools, helping with special events, providing food, giving administrative assistance, and so much more."/>
@@ -153,9 +151,9 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:orientation="vertical"
-                            android:layout_marginRight="40dp"
-                            android:layout_marginBottom="100dp"
-                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
                             android:layout_height="wrap_content">
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -164,13 +162,14 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
+                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent"/>
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:textColor="#000000"
                                     android:textSize="@dimen/text_size1"
-                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginLeft="10dp"
                                     android:text="A growing relationship with God and reliance on the power of the Holy Spirit"/>
                             </LinearLayout>
                             <LinearLayout
@@ -180,13 +179,14 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
+                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent"/>
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:textColor="#000000"
                                     android:textSize="@dimen/text_size1"
-                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginLeft="10dp"
                                     android:text="A heart for high school students"/>
                             </LinearLayout>
                             <LinearLayout
@@ -196,13 +196,14 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
+                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent"/>
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:textColor="#000000"
                                     android:textSize="@dimen/text_size1"
-                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginLeft="10dp"
                                     android:text="Faith to initiate relationships and share the gospel boldly"/>
                             </LinearLayout>
                             <LinearLayout
@@ -212,13 +213,14 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
+                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent"/>
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:textColor="#000000"
                                     android:textSize="@dimen/text_size1"
-                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginLeft="10dp"
                                     android:text="A good moral and spiritual role model"/>
                             </LinearLayout>
                             <LinearLayout
@@ -229,13 +231,14 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
+                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent"/>
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:textColor="#000000"
                                     android:textSize="@dimen/text_size1"
-                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginLeft="10dp"
                                     android:text="Time: Those who work directly with students should give at
 least 5 – 10 hours a week."/>
                             </LinearLayout>
@@ -281,7 +284,7 @@ least 5 – 10 hours a week."/>
                             android:textColor="@color/black"
                             android:background="@color/colorOrange"
                             android:layout_gravity="right"
-                            android:gravity="right"
+                            android:gravity="center"
                             android:text="Next"
                             android:padding="10dp"
                             android:layout_margin="5dp"

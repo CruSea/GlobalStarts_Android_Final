@@ -7,6 +7,16 @@ package ds.gcme.com.globalstart.Models;
 public class News {
     private String UUID,Title,Summary,Detail,ImageURL,PubDate;
 
+    private String id;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public String getUUID() {
         return UUID;
     }

@@ -22,13 +22,14 @@
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleMarginStart="48dp"
             app:expandedTitleMarginEnd="64dp"
+            app:title=""
             android:fitsSystemWindows="true">
 
             <ImageView
                 android:id="@+id/global_start_image"
                 android:src="@drawable/global_start_"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="match_parent"
                 android:scaleType="fitXY"
                 android:fitsSystemWindows="true"
                 app:layout_collapseMode="parallax"/>
@@ -40,7 +41,13 @@
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                 app:layout_collapseMode="pin" />
 
-            <android.support.v4.widget.NestedScrollView
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.v4.widget.NestedScrollView
                 android:id="@+id/news_detail_scroll"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -198,9 +205,5 @@
 
 
             </android.support.v4.widget.NestedScrollView>
-
-        </android.support.design.widget.CollapsingToolbarLayout>
-
-    </android.support.design.widget.AppBarLayout>
 
 </android.support.design.widget.CoordinatorLayout>

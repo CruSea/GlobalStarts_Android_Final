@@ -28,7 +28,7 @@
                 android:id="@+id/global_start_image"
                 android:src="@drawable/global_start_learn_how_to"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="match_parent"
                 android:scaleType="fitXY"
                 android:fitsSystemWindows="true"
                 app:layout_collapseMode="parallax"/>
@@ -101,7 +101,7 @@
                             android:layout_marginRight="30dp"
                             android:textSize="18sp"
                             android:textColor="@color/black"
-                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_vertical|right"
                             android:text="In order to minister most effectively, you need to know who you are ministering to."/>
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -113,13 +113,15 @@
                             android:background="@color/colorPrimaryDark">
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:orientation="vertical"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            >
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_marginLeft="40dp"
                                 android:gravity="center_vertical"
                                 android:layout_height="wrap_content">
                                 <ImageView
@@ -133,12 +135,11 @@
                                     android:textColor="#000000"
                                     android:textSize="@dimen/text_size0"
                                     android:layout_marginLeft="20dp"
-                                    android:textStyle="bold"
+                                    android:textStyle="normal"
                                     android:text="What is on their hearts – their joys, burdens, desires, hopes and dreams?"/>
                             </LinearLayout>
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_marginLeft="40dp"
                                 android:gravity="center_vertical"
                                 android:layout_marginTop="10dp"
                                 android:layout_height="wrap_content">
@@ -153,13 +154,12 @@
                                     android:textColor="#000000"
                                     android:textSize="@dimen/text_size0"
                                     android:layout_marginLeft="20dp"
-                                    android:textStyle="bold"
+                                    android:textStyle="normal"
                                     android:text="What outside influences affect their lives?"/>
 
                             </LinearLayout>
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_marginLeft="40dp"
                                 android:gravity="center_vertical"
                                 android:layout_marginTop="10dp"
                                 android:layout_height="wrap_content">
@@ -174,13 +174,12 @@
                                     android:textColor="#000000"
                                     android:textSize="@dimen/text_size0"
                                     android:layout_marginLeft="20dp"
-                                    android:textStyle="bold"
+                                    android:textStyle="normal"
                                     android:text="What are their greatest needs?"/>
 
                             </LinearLayout>
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_marginLeft="40dp"
                                 android:gravity="center_vertical"
                                 android:layout_marginTop="10dp"
                                 android:layout_height="wrap_content">
@@ -195,11 +194,12 @@
                                     android:textColor="#000000"
                                     android:textSize="@dimen/text_size0"
                                     android:layout_marginLeft="20dp"
-                                    android:textStyle="bold"
+                                    android:textStyle="normal"
                                     android:text="What are their personal challenges: peer pressure, bullying, performance, parental neglect, home life?"/>
 
                             </LinearLayout>
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="2dp"
@@ -223,7 +223,6 @@
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
                             android:layout_marginTop="10dp"
-                            android:gravity="center_horizontal"
                             android:textSize="18sp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
@@ -239,32 +238,14 @@
                             android:layout_marginBottom="10dp"
                             android:background="@color/colorPrimaryDark">
                         </LinearLayout>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:gravity="center_horizontal"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/text_size2"
-                            android:text="Throughout history, God has chosen teenagers to help start revivals, lead spiritual movements, rule nations and change societies. He still involves them today. God desires to change students’ lives and give them a passion for Christ. They are vital in helping to ful ll the Great Commission."/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/black"
-                            android:textSize="22sp"
-                            android:text="Jesus modeled this"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
                             android:layout_margin="10dp"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_size2"
-                            android:text="In John 4:6-18 Jesus knew the Samaritan woman’s greatest need was for love, affection and a sense of worth. He knew it was not being fulfilled through relationships with men, so He offered her Living Water to fill her deepest need and her spiritual thirst."/>
+                            android:text="Jesus modeled this. In John 4:6-18 Jesus knew the Samaritan woman’s greatest need was for love, affection and a sense of worth. He knew it was not being fulfilled through relationships with men, so He offered her Living Water to fill her deepest need and her spiritual thirst."/>
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="2dp"
@@ -281,11 +262,11 @@
                             android:scaleType="centerCrop"
                             android:src="@drawable/global_start_"
                             />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
-                            android:gravity="center_horizontal"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_size2"
                             android:text="Zacchaeus was a sinner but also curious as to whom Jesus was. Knowing that Zacchaeus needed to know his value and worth, Jesus went to his home and ministered to him. This brought him to repentance and salvation (Luke 19:1-10)."/>
@@ -303,7 +284,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
-                            android:gravity="center_horizontal"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_size2"
                             android:text="Jesus modeled the importance of knowing the real issues in the lives of those He ministered to and we must do the same. With the youth culture changing so rapidly we must constantly observe and ask questions to know how we can minister effectively. We must ASK, LOOK and LISTEN."/>
@@ -321,8 +301,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:layout_margin="5dp"
-                            android:gravity="center_horizontal"
                             android:textColor="@color/black"
+                            android:gravity="center_horizontal"
                             android:textStyle="bold"
                             android:textSize="20sp"
                             android:text="ASK"/>
@@ -333,7 +313,6 @@
                             android:layout_marginLeft="15dp"
                             android:layout_marginRight="15dp"
                             android:layout_marginBottom="10dp"
-                            android:gravity="center_horizontal"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_size2"
                             android:text="Good questions: What do teenagers think about? What are their beliefs and values? How do they get their needs met? What are their goals in life? What are their greatest fears?"/>
@@ -355,7 +334,6 @@
                             android:layout_marginLeft="15dp"
                             android:layout_marginRight="15dp"
                             android:layout_marginBottom="10dp"
-                            android:gravity="center_horizontal"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_size2"
                             android:text="Look and observe: How and where do they spend their time? What do they do for fun? How do they act around their peers, their parents or authority? How do they dress?"/>
@@ -375,7 +353,6 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="15dp"
                             android:layout_marginRight="15dp"
-                            android:gravity="center_horizontal"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_size2"
                             android:text="Listen carefully: Listen to their conversations with others. What do they talk about? What is important to them?"/>
@@ -408,7 +385,7 @@
                             android:textColor="@color/black"
                             android:background="@color/colorOrange"
                             android:layout_gravity="right"
-                            android:gravity="right"
+                            android:gravity="center"
                             android:text="Next"
                             android:padding="10dp"
                             android:layout_margin="5dp"

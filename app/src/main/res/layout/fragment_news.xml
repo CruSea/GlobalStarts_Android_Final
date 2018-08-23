@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/swipe_refresh_layout"
+    >
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_feed"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:nestedScrollingEnabled="true"
+                            >
+
+                        </android.support.v7.widget.RecyclerView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="?actionBarSize"
+                            >
+                                <include layout="@layout/partial_loadingmore" />
+
+                                <include layout="@layout/partial_loadingerror" />
+
+                                <include layout="@layout/partial_loadingdone" />
+                        </LinearLayout>
+
+
+                </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

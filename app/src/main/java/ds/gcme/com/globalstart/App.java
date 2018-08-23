@@ -1,8 +1,12 @@
 package ds.gcme.com.globalstart;
 
 import android.app.Application;
+import android.text.TextUtils;
 
-import ds.gcme.com.globalstart.SyncService.SyncService;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
+
 
 /**
  * Created by bengeos on 5/4/17.
@@ -10,12 +14,49 @@ import ds.gcme.com.globalstart.SyncService.SyncService;
 
 public class App extends Application {
     private static String TAG = "SyncService";
-    private SyncService mySyncService;
+    private RequestQueue mRequestQueue;
+    private static App mInstance;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        mySyncService = new SyncService(this);
-        mySyncService.StartSyncing();
+
+        mInstance = this;
+
     }
+
+
+    public static synchronized App getInstance() {
+        return mInstance;
+    }
+
+    public RequestQueue getRequestQueue() {
+        if (mRequestQueue == null) {
+            mRequestQueue = Volley.newRequestQueue(getApplicationContext());
+        }
+
+        return mRequestQueue;
+    }
+
+    public <T> void addToRequestQueue(Request<T> req, String tag) {
+        req.setTag(TextUtils.isEmpty(tag) ? TAG : tag);
+        getRequestQueue().add(req);
+    }
+
+    public <T> void addToRequestQueue(Request<T> req) {
+        req.setTag(TAG);
+        getRequestQueue().add(req);
+    }
+
+    public void cancelPendingRequests(Object tag) {
+        if (mRequestQueue != null) {
+            mRequestQueue.cancelAll(tag);
+        }
+    }
+
+    @Override
+    public void onTerminate() {
+        super.onTerminate();
+    }
+
 }

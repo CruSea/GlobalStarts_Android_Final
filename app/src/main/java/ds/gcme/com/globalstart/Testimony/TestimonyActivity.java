@@ -9,7 +9,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import ds.gcme.com.globalstart.R;
-import ds.gcme.com.globalstart.SyncService.SyncService;
 
 
 /**
@@ -34,7 +33,6 @@ public class TestimonyActivity extends AppCompatActivity {
                     Testimony testimony = new Testimony();
                     testimony.setUser((FullName.getText() != null)? FullName.getText().toString():"Unknown");
                     testimony.setTestimony(Testimony.getText().toString());
-                    SyncService.myTestimonies.push().setValue(testimony);
                     Testimony.setText("");
                     FullName.setText("");
                     Toast.makeText(TestimonyActivity.this,"Testimony Sent",Toast.LENGTH_LONG).show();

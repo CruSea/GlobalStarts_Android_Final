@@ -26,7 +26,7 @@
 
             <ImageView
                 android:id="@+id/global_start_image"
-                android:src="@drawable/global_start_win_1"
+                android:src="@drawable/global_start_sowing2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
@@ -83,7 +83,7 @@
                         android:background="@color/colorPrimary"
                         android:textColor="@color/white"
                         android:textSize="22dp"
-                        android:text="WIN "
+                        android:text="Sowing and Evangelism with NO access to the school"
 
                         android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
 
@@ -94,15 +94,16 @@
                         android:gravity="center_horizontal"
                         android:orientation="vertical">
 
-
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
-                            android:text="In Mark 16:15 Jesus said to His disciples, “Go into all the world and preach the good news to all creation.” Jesus went out. Paul, Timothy, the disciples and many others also went out and proclaimed the Good News. We are also called to go!"
+                            android:layout_marginTop="10dp"
+                            android:text="Where can you find access to students? There are ways to meet students and have opportunities to share your faith even if you never go to campus. Find out where students go after school or where they gather in the evenings and on the weekends. Initiate conversations with students and take opportunities to talk to them about God."
                             android:textColor="@color/black"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"
+                            android:id="@+id/textView" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -112,70 +113,35 @@
                             android:layout_marginRight="100dp"
                             android:layout_marginTop="10dp"
                             android:background="@color/colorPrimaryDark" />
-
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
-                            android:layout_marginTop="5dp"
-                            android:text="How can you expose as many students to the gospel and then follow up and disciple those who respond? This will look different in every country, city or school, depending on the openness of the school campus and your access to students."
+                            android:layout_marginTop="10dp"
+                            android:text="Partner with churches and train the Christian students to share their faith. You can send the students back to their schools to share Christ with their friends and then invite their friends to activities off campus. Students can have outreaches and parties in their homes, in parks, at restaurants or in many other locations."
                             android:textColor="@color/black"
                             android:textSize="16sp" />
-
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginLeft="100dp"
-                            android:layout_marginRight="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
                             android:layout_marginTop="10dp"
-                            android:background="@color/colorPrimaryDark" />
-
+                            android:textStyle="bold"
+                            android:text="Can you use social media to meet kids and build trust in relationships with those you have met?"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
-                            android:layout_marginTop="5dp"
-                            android:text="Identify target groups: A target group is a group of students who have common interests because of friendships, talents or personalities. They can be organized clubs and athletic teams or natural groups of students because of classes, friendships, social groups or where they live. If you reach out to target groups you will have a group of students who trust each other and are more likely to learn and grow together."
+                            android:layout_marginTop="10dp"
+                            android:text="Invite students to fun activities, English corners, sports competitions and weekly meetings at student’s homes that include games and a short biblical message."
                             android:textColor="@color/black"
                             android:textSize="16sp" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginLeft="100dp"
-                            android:layout_marginRight="100dp"
-                            android:layout_marginTop="10dp"
-                            android:background="@color/colorPrimaryDark" />
-
-
-
-
-                        <Button
-                            android:id="@+id/btn_sowing_with"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/white"
-                            android:background="@color/colorPrimary"
-                            android:layout_margin="10dp"
-                            android:text="Sowing and Evangelism WITH Access to the School"
-                            android:textSize="17sp" />
-
-                        <Button
-                            android:id="@+id/btn_sowing_without"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/white"
-                            android:background="@color/colorPrimary"
-                            android:layout_margin="10dp"
-                            android:text="Sowing and Evangelism WITHOUT Access to the School"
-                            android:textSize="17sp" />
-
                     </LinearLayout>
-
 
 
                     <FrameLayout
@@ -184,10 +150,11 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/btn_take_action_win1"
+                            android:id="@+id/btn_take_action_win3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="left"
+                            android:textColor="@color/black"
                             android:background="@color/colorOrange"
                             android:text="Take Action" />
 

@@ -28,7 +28,7 @@
                 android:id="@+id/global_start_image"
                 android:src="@drawable/global_start_teenage"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="match_parent"
                 android:scaleType="fitXY"
                 android:fitsSystemWindows="true"
                 app:layout_collapseMode="parallax"/>
@@ -102,7 +102,7 @@
                             android:textSize="16sp"
                             android:layout_margin="10dp"
                             android:textColor="@color/black"
-                            android:textStyle="bold"
+                            android:textStyle="normal"
                             android:text="God’s heart for teenagers and their ability to lead"/>
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -136,7 +136,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="15dp"
                             android:gravity="center_horizontal"
-                            android:textStyle="bold"
+                            android:textStyle="normal"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_size2"
                             android:text="As a youth, God called JOSIAH to turn an evil and idolatrous nation to one who sought after God."/>
@@ -146,7 +146,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="15dp"
                             android:gravity="center_horizontal"
-                            android:textStyle="bold"
+                            android:textStyle="normal"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_size2"
                             android:text="MARY was chosen as a young girl to give birth to the Savior of the world!"/>
@@ -155,10 +155,10 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="15dp"
                             android:gravity="center_horizontal"
-                            android:textStyle="bold"
+                            android:textStyle="normal"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_size2"
-                            android:text="DAVID, a teenage shepherd boy, was called to fight a powerful nation and defeat it to establish the kingdom of Israel"/>
+                            android:text="DAVID, a teenage shepherd boy, was called to fight a powerful nation and defeat it to establish the kingdom of Israel."/>
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="2dp"
@@ -223,7 +223,7 @@ His ministry. In fact, 1 Timothy 4:12 says, “Don’t let anyone look down on y
                             android:textColor="@color/black"
                             android:background="@color/colorOrange"
                             android:layout_gravity="right"
-                            android:gravity="right"
+                            android:gravity="center"
                             android:text="Next"
                             android:padding="10dp"
                             android:layout_margin="5dp"

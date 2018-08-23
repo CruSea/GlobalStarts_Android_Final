@@ -91,6 +91,56 @@
                         android:gravity="center_horizontal"
                         android:orientation="vertical">
 
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Vision"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="18dp"
+                                android:id="@+id/textView_vision" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="Your vision "
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/movement_my_vision"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Type here"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -125,7 +175,7 @@
                                     android:id="@+id/movement_prayer_strategy"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:hint="type your prayer strategy"
+                                    android:hint="Type here"
                                     />
 
                             </LinearLayout>
@@ -171,7 +221,7 @@
                                     android:id="@+id/movement_my_help"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:hint="type who will help you"
+                                    android:hint="Type here"
                                     />
 
                             </LinearLayout>
@@ -216,7 +266,7 @@
                                     android:id="@+id/movement_win"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:hint="type whom to win"
+                                    android:hint="Type here"
                                     />
 
                             </LinearLayout>
@@ -260,7 +310,7 @@
                                     android:id="@+id/movement_build"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:hint="type what to build"
+                                    android:hint="Type here"
                                     />
 
                             </LinearLayout>
@@ -299,7 +349,7 @@
                                     android:layout_marginLeft="10dp"
                                     android:layout_marginRight="10dp"
                                     android:layout_marginTop="5dp"
-                                    android:text="GO globally"
+                                    android:text="How students can lead locally and go globally"
                                     android:textColor="@color/black"
                                     android:textSize="15dp" />
 
@@ -307,15 +357,12 @@
                                     android:id="@+id/movement_send"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:hint="Have a place for My Vision"
+                                    android:hint="Type here"
                                     />
 
                             </LinearLayout>
 
                         </LinearLayout>
-
-
-
 
 
 
@@ -327,6 +374,7 @@
                     <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:orientation="horizontal">
 
                         <Button

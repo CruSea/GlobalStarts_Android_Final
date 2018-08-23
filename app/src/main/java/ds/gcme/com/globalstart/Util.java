@@ -1,13 +1,17 @@
 package ds.gcme.com.globalstart;
 
+import android.*;
 import android.app.Activity;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.graphics.Rect;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by Roger on 9/29/2017.
@@ -35,4 +39,36 @@ public class Util {
         builder.setView(view);
         builder.show();
     }
+
+
+    public static boolean checkAccountsPermissionDenied(Activity activity){
+        return ContextCompat.checkSelfPermission(activity,
+                android.Manifest.permission.GET_ACCOUNTS)
+                != PackageManager.PERMISSION_GRANTED;
+    }
+
+    public static boolean checkPhoneStatePermissionDenied(Activity activity){
+        return ContextCompat.checkSelfPermission(activity,
+                android.Manifest.permission.READ_PHONE_STATE)
+                != PackageManager.PERMISSION_GRANTED;
+    }
+
+    public static boolean checkStorageWritePermissionDenied(Activity activity){
+        return ContextCompat.checkSelfPermission(activity,
+                android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED;
+    }
+
+
+    public static boolean checkStorageReadPermissionDenied(Activity activity){
+        return ContextCompat.checkSelfPermission(activity,
+                android.Manifest.permission.READ_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED;
+    }
+
+    public static void showToastMessageShort(Context context, String message){
+        Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
+    }
+
+
 }

@@ -101,6 +101,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:background="@color/colorOrange"
+            android:gravity="center"
             android:layout_gravity="right"
             android:text="Next"/>
         <Button
@@ -109,6 +110,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
+            android:gravity="center"
             android:layout_gravity="left"
             android:text="Take Action"/>
     </FrameLayout>
