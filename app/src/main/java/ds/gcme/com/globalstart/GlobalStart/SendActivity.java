@@ -3,6 +3,7 @@ package ds.gcme.com.globalstart.GlobalStart;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -18,12 +19,18 @@ import ds.gcme.com.globalstart.Util;
 public class SendActivity extends AppCompatActivity {
 
     Button btnAction, btnNext;
+    private CollapsingToolbarLayout collapsingToolbarLayout;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.global_start_send);
         setSupportActionBar((Toolbar) findViewById(R.id.global_start_toolbar));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        collapsingToolbarLayout = findViewById(R.id.global_start_collapsing_toolbar);
+        collapsingToolbarLayout.setTitle("");
+        getSupportActionBar().setTitle("");
 
         btnNext = (Button) findViewById(R.id.btn_next);
         btnNext.setOnClickListener(new View.OnClickListener() {

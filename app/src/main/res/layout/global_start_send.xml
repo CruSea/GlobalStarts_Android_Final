@@ -10,7 +10,7 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/news_detail_app_bar_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:fitsSystemWindows="true">
 
@@ -22,11 +22,12 @@
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleMarginStart="48dp"
             app:expandedTitleMarginEnd="64dp"
+            app:title=""
             android:fitsSystemWindows="true">
 
             <ImageView
                 android:id="@+id/global_start_image"
-                android:src="@drawable/global_start_send"
+                android:src="@drawable/global_start_find_others"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
@@ -37,6 +38,7 @@
                 android:id="@+id/global_start_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
+                app:title=""
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                 app:layout_collapseMode="pin" />
 
@@ -83,7 +85,7 @@
                         android:background="@color/colorPrimary"
                         android:textColor="@color/white"
                         android:textSize="22dp"
-                        android:text="Send "
+                        android:text="SEND"
                         android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
 
 
@@ -112,7 +114,7 @@
                             android:textColor="@color/black"
                             android:layout_marginTop="5dp"
                             android:textSize="16sp"
-                            android:text="Teenagers can be leaders. They have been called to multiply their faith. Just as Jesus trained His young disciple to carry on the ministry, you can train your students to multiply their faith to their friends, school, country and to the world (Acts 1:8)!"/>
+                            android:text="Teenagers can be leaders. They have been called to multiply their faith. Just as Jesus trained His young disciples to carry on the ministry, you can train your students to multiply their faith to their friends, school, country and to the world (Acts 1:8)!"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -126,8 +128,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:scaleType="centerCrop"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="20dp"
                             android:src="@drawable/global_start_learn_how_2"/>
                         <LinearLayout
                             android:layout_width="match_parent"

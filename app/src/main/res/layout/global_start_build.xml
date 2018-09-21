@@ -10,7 +10,7 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/news_detail_app_bar_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:fitsSystemWindows="true">
 
@@ -124,8 +124,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:scaleType="centerCrop"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="20dp"
                             android:src="@drawable/global_start_learn_how_to"/>
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -161,7 +159,6 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
-                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent"/>
                                 <TextView
                                     android:layout_width="match_parent"
@@ -180,7 +177,6 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
-                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent"/>
                                 <TextView
                                     android:layout_width="match_parent"
@@ -199,7 +195,6 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
-                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent"/>
                                 <TextView
                                     android:layout_width="match_parent"
@@ -218,7 +213,6 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
-                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent"/>
                                 <TextView
                                     android:layout_width="match_parent"
@@ -237,7 +231,6 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
-                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent"/>
                                 <TextView
                                     android:layout_width="match_parent"
@@ -256,7 +249,6 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
-                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent"/>
                                 <TextView
                                     android:layout_width="match_parent"
@@ -275,7 +267,6 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
-                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent"/>
                                 <TextView
                                     android:layout_width="match_parent"

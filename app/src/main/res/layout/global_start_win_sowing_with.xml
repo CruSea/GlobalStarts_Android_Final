@@ -10,7 +10,7 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/news_detail_app_bar_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:fitsSystemWindows="true">
 
@@ -74,7 +74,7 @@
                     >
 
 
-                    <TextView
+                    <ds.gcme.com.globalstart.Helpers.MyHtmlTextView
                         android:id="@+id/global_start_title"
                         android:autoLink="web|all"
                         android:layout_width="match_parent"
@@ -83,7 +83,7 @@
                         android:background="@color/colorPrimary"
                         android:textColor="@color/white"
                         android:textSize="22dp"
-                        android:text="Sowing and Evangelism WITH Access to the School "
+                        android:text="@string/win_sowing_with_page_1"
                         android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
 
 
@@ -152,7 +152,6 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
-                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent" />
 
                                 <TextView
@@ -174,7 +173,6 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
-                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent" />
 
                                 <TextView
@@ -196,7 +194,6 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
-                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent" />
 
                                 <TextView
@@ -218,7 +215,6 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
-                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent" />
 
                                 <TextView
@@ -240,7 +236,6 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
-                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent" />
 
                                 <TextView
@@ -262,7 +257,6 @@
                                 <ImageView
                                     android:layout_width="10dp"
                                     android:layout_height="10dp"
-                                    android:layout_gravity="center"
                                     android:background="@color/colorAccent" />
 
                                 <TextView

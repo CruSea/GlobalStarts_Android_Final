@@ -10,7 +10,7 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/news_detail_app_bar_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:fitsSystemWindows="true">
 
@@ -26,7 +26,7 @@
 
             <ImageView
                 android:id="@+id/global_start_image"
-                android:src="@drawable/global_start_teenage"
+                android:src="@drawable/img_godsheart"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
@@ -84,7 +84,7 @@
                         android:background="@color/colorPrimary"
                         android:textColor="@color/white"
                         android:textSize="22dp"
-                        android:text="God’s heart for teenagers  "
+                        android:text="God’s Heart for Teenagers and Their Ability to Lead "
 
                         android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
 
@@ -95,70 +95,53 @@
                         android:layout_width="match_parent"
                         android:orientation="vertical"
                         android:layout_height="match_parent">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
-                            android:textSize="16sp"
-                            android:layout_margin="10dp"
-                            android:textColor="@color/black"
-                            android:textStyle="normal"
-                            android:text="God’s heart for teenagers and their ability to lead"/>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:layout_marginLeft="100dp"
-                            android:layout_marginRight="100dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:background="@color/colorPrimaryDark">
 
-                        </LinearLayout>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="15dp"
-                            android:gravity="center_horizontal"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_size1"
                             android:text="Throughout history, God has chosen teenagers to help start revivals, lead spiritual movements, rule nations and change societies. He still involves them today. God desires to change students’ lives and give them a passion for Christ. They are vital in helping to fulfill the Great Commission."/>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:layout_marginLeft="100dp"
-                            android:layout_marginRight="100dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:background="@color/colorPrimaryDark">
-                        </LinearLayout>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="15dp"
-                            android:gravity="center_horizontal"
-                            android:textStyle="normal"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/text_size2"
-                            android:text="As a youth, God called JOSIAH to turn an evil and idolatrous nation to one who sought after God."/>
 
-                        <TextView
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginRight="100dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/colorPrimaryDark">
+                        </LinearLayout>
+
+                        <ds.gcme.com.globalstart.Helpers.MyHtmlTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="15dp"
                             android:gravity="center_horizontal"
                             android:textStyle="normal"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/text_size2"
-                            android:text="MARY was chosen as a young girl to give birth to the Savior of the world!"/>
-                        <TextView
+                            android:textSize="@dimen/text_size1"
+                            android:text="@string/gods_heart_page_1"/>
+
+                        <ds.gcme.com.globalstart.Helpers.MyHtmlTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="15dp"
                             android:gravity="center_horizontal"
                             android:textStyle="normal"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/text_size2"
-                            android:text="DAVID, a teenage shepherd boy, was called to fight a powerful nation and defeat it to establish the kingdom of Israel."/>
+                            android:textSize="@dimen/text_size1"
+                            android:text="@string/gods_heart_page_2"/>
+                        <ds.gcme.com.globalstart.Helpers.MyHtmlTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:gravity="center_horizontal"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size1"
+                            android:text="@string/gods_heart_page_3"/>
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="2dp"
@@ -172,11 +155,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="15dp"
-                            android:gravity="center_horizontal"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/text_size2"
-                            android:text="God called Joseph, Samuel, Esther, Timothy, the disciples and many other teenagers to become great leaders. It is obvious that He sees teenagers as strategic and essential to His heart and
-His ministry. In fact, 1 Timothy 4:12 says, “Don’t let anyone look down on you because you are young, but set an example for the believers in speech, in conduct, in love, in faith and in purity.”"/>
+                            android:textSize="@dimen/text_size1"
+                            android:text="God called Joseph, Samuel, Esther, Timothy, the disciples and many other teenagers to become great leaders. It is obvious that He sees teenagers as strategic and essential to His heart and His ministry. In fact, 1 Timothy 4:12 says, “Don’t let anyone look down on you because you are young, but set an example for the believers in speech, in conduct, in love, in faith and in purity.”"/>
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="2dp"
@@ -193,7 +174,7 @@ His ministry. In fact, 1 Timothy 4:12 says, “Don’t let anyone look down on y
                             android:layout_marginBottom="100dp"
                             android:gravity="center_horizontal"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/text_size2"
+                            android:textSize="@dimen/text_size1"
                             android:text="Do you believe that teenagers can make an impact? God does and He is ready to burn that passion within their hearts that will set them ablaze by the Holy Spirit to make an eternal spiritual difference!"/>
 
                     </LinearLayout>

@@ -10,7 +10,7 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/news_detail_app_bar_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:fitsSystemWindows="true">
 
@@ -20,13 +20,14 @@
             android:layout_height="match_parent"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:contentScrim="?attr/colorPrimary"
+            app:title=""
             app:expandedTitleMarginStart="48dp"
             app:expandedTitleMarginEnd="64dp"
             android:fitsSystemWindows="true">
 
             <ImageView
                 android:id="@+id/global_start_image"
-                android:src="@drawable/global_start_learn_how_to"
+                android:src="@drawable/img_learn_about"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
@@ -36,6 +37,7 @@
             <android.support.v7.widget.Toolbar
                 android:id="@+id/global_start_toolbar"
                 android:layout_width="match_parent"
+                app:title=""
                 android:layout_height="?attr/actionBarSize"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                 app:layout_collapseMode="pin" />
@@ -83,7 +85,7 @@
                         android:background="@color/colorPrimary"
                         android:textColor="@color/white"
                         android:textSize="22dp"
-                        android:text="Learn about the youth culture"
+                        android:text="Learn About the Youth Culture"
 
                         android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
 
@@ -134,7 +136,7 @@
                                     android:layout_height="wrap_content"
                                     android:textColor="#000000"
                                     android:textSize="@dimen/text_size0"
-                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginLeft="10dp"
                                     android:textStyle="normal"
                                     android:text="What is on their hearts – their joys, burdens, desires, hopes and dreams?"/>
                             </LinearLayout>
@@ -153,7 +155,7 @@
                                     android:layout_height="wrap_content"
                                     android:textColor="#000000"
                                     android:textSize="@dimen/text_size0"
-                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginLeft="10dp"
                                     android:textStyle="normal"
                                     android:text="What outside influences affect their lives?"/>
 
@@ -173,7 +175,7 @@
                                     android:layout_height="wrap_content"
                                     android:textColor="#000000"
                                     android:textSize="@dimen/text_size0"
-                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginLeft="10dp"
                                     android:textStyle="normal"
                                     android:text="What are their greatest needs?"/>
 
@@ -193,7 +195,7 @@
                                     android:layout_height="wrap_content"
                                     android:textColor="#000000"
                                     android:textSize="@dimen/text_size0"
-                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginLeft="10dp"
                                     android:textStyle="normal"
                                     android:text="What are their personal challenges: peer pressure, bullying, performance, parental neglect, home life?"/>
 
@@ -210,14 +212,6 @@
                             android:background="@color/colorPrimaryDark">
                         </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="200dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/global_start_learn_how_2"
-                            />
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -239,13 +233,13 @@
                             android:background="@color/colorPrimaryDark">
                         </LinearLayout>
 
-                        <TextView
+                        <ds.gcme.com.globalstart.Helpers.MyHtmlTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_size2"
-                            android:text="Jesus modeled this. In John 4:6-18 Jesus knew the Samaritan woman’s greatest need was for love, affection and a sense of worth. He knew it was not being fulfilled through relationships with men, so He offered her Living Water to fill her deepest need and her spiritual thirst."/>
+                            android:text="@string/learn_youth_page_1"/>
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="2dp"
@@ -257,19 +251,17 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/global_start_"
                             />
 
-                        <TextView
+                        <ds.gcme.com.globalstart.Helpers.MyHtmlTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_size2"
-                            android:text="Zacchaeus was a sinner but also curious as to whom Jesus was. Knowing that Zacchaeus needed to know his value and worth, Jesus went to his home and ministered to him. This brought him to repentance and salvation (Luke 19:1-10)."/>
+                            android:text="@string/learn_youth_page_2"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -280,13 +272,13 @@
                             android:layout_marginBottom="10dp"
                             android:background="@color/colorPrimaryDark">
                         </LinearLayout>
-                        <TextView
+                        <ds.gcme.com.globalstart.Helpers.MyHtmlTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_size2"
-                            android:text="Jesus modeled the importance of knowing the real issues in the lives of those He ministered to and we must do the same. With the youth culture changing so rapidly we must constantly observe and ask questions to know how we can minister effectively. We must ASK, LOOK and LISTEN."/>
+                            android:text="@string/learn_youth_page_3"/>
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="2dp"
@@ -296,18 +288,8 @@
                             android:layout_marginBottom="10dp"
                             android:background="@color/colorPrimaryDark">
                         </LinearLayout>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_margin="5dp"
-                            android:textColor="@color/black"
-                            android:gravity="center_horizontal"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:text="ASK"/>
 
-                        <TextView
+                        <ds.gcme.com.globalstart.Helpers.MyHtmlTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="15dp"
@@ -315,20 +297,9 @@
                             android:layout_marginBottom="10dp"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_size2"
-                            android:text="Good questions: What do teenagers think about? What are their beliefs and values? How do they get their needs met? What are their goals in life? What are their greatest fears?"/>
+                            android:text="@string/learn_youth_page_4"/>
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_margin="5dp"
-                            android:gravity="center_horizontal"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:text="Look"/>
-
-                        <TextView
+                        <ds.gcme.com.globalstart.Helpers.MyHtmlTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="15dp"
@@ -336,26 +307,16 @@
                             android:layout_marginBottom="10dp"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_size2"
-                            android:text="Look and observe: How and where do they spend their time? What do they do for fun? How do they act around their peers, their parents or authority? How do they dress?"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_margin="5dp"
-                            android:gravity="center_horizontal"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:text="Listen"/>
+                            android:text="@string/learn_youth_page_5"/>
 
-                        <TextView
+                        <ds.gcme.com.globalstart.Helpers.MyHtmlTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="15dp"
                             android:layout_marginRight="15dp"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_size2"
-                            android:text="Listen carefully: Listen to their conversations with others. What do they talk about? What is important to them?"/>
+                            android:text="@string/learn_youth_page_6"/>
 
                     </LinearLayout>
 

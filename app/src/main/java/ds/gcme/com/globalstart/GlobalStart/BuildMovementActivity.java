@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -22,12 +23,18 @@ public class BuildMovementActivity extends AppCompatActivity {
     private Button btnNext,btnAction;
     private Context myContext;
     private Activity myActivity;
+    private CollapsingToolbarLayout collapsingToolbarLayout;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.global_start_build_spiritual_movement);
         setSupportActionBar((Toolbar) findViewById(R.id.global_start_toolbar));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        collapsingToolbarLayout = findViewById(R.id.global_start_collapsing_toolbar);
+        collapsingToolbarLayout.setTitle("");
+        getSupportActionBar().setTitle("");
 
         myContext = this;
         myActivity = this;

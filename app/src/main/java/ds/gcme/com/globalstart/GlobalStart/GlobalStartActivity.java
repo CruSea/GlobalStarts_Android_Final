@@ -4,12 +4,19 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
+import android.text.Spanned;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Spinner;
+import android.widget.TextView;
 
 import ds.gcme.com.globalstart.R;
+import ds.gcme.com.globalstart.Util;
 
 
 /**
@@ -20,6 +27,8 @@ public class GlobalStartActivity extends AppCompatActivity {
     private Button btnNext;
     private Context myContext;
 
+    private CollapsingToolbarLayout collapsingToolbarLayout;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +36,12 @@ public class GlobalStartActivity extends AppCompatActivity {
         setSupportActionBar((Toolbar) findViewById(R.id.global_start_toolbar));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        collapsingToolbarLayout = findViewById(R.id.global_start_collapsing_toolbar);
+        collapsingToolbarLayout.setTitle("");
+        getSupportActionBar().setTitle("");
+
         myContext = this;
+
         btnNext = (Button) findViewById(R.id.btn_next);
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override

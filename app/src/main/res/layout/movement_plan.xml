@@ -28,7 +28,7 @@
                 android:id="@+id/global_start_image"
                 android:src="@drawable/img_movement_plan"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="match_parent"
                 android:scaleType="fitXY"
                 android:fitsSystemWindows="true"
                 app:layout_collapseMode="parallax"/>
@@ -318,11 +318,6 @@
                         </LinearLayout>
 
 
-
-
-
-
-
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -357,10 +352,11 @@
                                     android:id="@+id/movement_send"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:hint="Type here"
-                                    />
+                                    android:hint="Type here" />
 
                             </LinearLayout>
+
+
 
                         </LinearLayout>
 
@@ -382,7 +378,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="left"
-                            android:gravity="left"
+                            android:gravity="center"
                             android:textColor="@color/black"
                             android:background="@color/colorOrange"
                             android:text="Share"
@@ -397,7 +393,7 @@
                             android:textColor="@color/black"
                             android:background="@color/colorOrange"
                             android:layout_gravity="right"
-                            android:gravity="right"
+                            android:gravity="center"
                             android:text="Save"
                             android:padding="10dp"
                             android:layout_margin="5dp"

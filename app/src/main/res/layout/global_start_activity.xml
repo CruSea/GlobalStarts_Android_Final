@@ -10,14 +10,14 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/news_detail_app_bar_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:fitsSystemWindows="true">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/global_start_collapsing_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleMarginStart="48dp"
@@ -27,9 +27,9 @@
 
             <ImageView
                 android:id="@+id/global_start_image"
-                android:src="@drawable/global_start_"
+                android:src="@drawable/newintro"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="300dp"
                 android:scaleType="fitXY"
                 android:fitsSystemWindows="true"
                 app:layout_collapseMode="parallax"/>
@@ -112,7 +112,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textColor="#000000"
-                                        android:textSize="@dimen/text_size1"
+                                        android:textSize="@dimen/text_size2"
                                         android:layout_marginLeft="10dp"
                                         android:text="Hear the gospel"/>
                                 </LinearLayout>
@@ -129,7 +129,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textColor="#000000"
-                                        android:textSize="@dimen/text_size1"
+                                        android:textSize="@dimen/text_size2"
                                         android:layout_marginLeft="10dp"
                                         android:text="Respond by faith"/>
                                 </LinearLayout>
@@ -146,7 +146,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textColor="#000000"
-                                        android:textSize="@dimen/text_size1"
+                                        android:textSize="@dimen/text_size2"
                                         android:layout_marginLeft="10dp"
                                         android:text="Walk with God"/>
                                 </LinearLayout>
@@ -163,7 +163,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textColor="#000000"
-                                        android:textSize="@dimen/text_size1"
+                                        android:textSize="@dimen/text_size2"
                                         android:layout_marginLeft="10dp"
                                         android:text="Become spiritual multipliers"/>
                                 </LinearLayout>
@@ -178,14 +178,15 @@
                                     android:background="@color/colorPrimaryDark">
 
                                 </LinearLayout>
-                                <TextView
+                                <ds.gcme.com.globalstart.Helpers.MyHtmlTextView
+                                    android:id="@+id/intro_page_2"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="20dp"
-                                    android:gravity="center_horizontal"
                                     android:textColor="@color/black"
                                     android:textSize="@dimen/text_size2"
-                                    android:text="If that is your desire or if you dare to believe God to raise up teenagers to become leaders on their campuses and to be involved in helping reach the world, then get on your knees and pray! \nWith faith and dependence on the Lord, take these principles and use them in your country and watch what God will do in and through the lives of teenagers."/>
+                                    android:text="@string/intro_page_2"
+                                    />
                             </LinearLayout>
 
                             <Button

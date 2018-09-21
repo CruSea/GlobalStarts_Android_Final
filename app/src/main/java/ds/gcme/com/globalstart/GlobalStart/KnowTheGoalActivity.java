@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -22,6 +23,7 @@ import ds.gcme.com.globalstart.R;
 public class KnowTheGoalActivity extends AppCompatActivity {
     private Context myContext;
     private Button btnNext,btnAction,btnWin,btnSend,btnBuild;
+    private CollapsingToolbarLayout collapsingToolbarLayout;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -29,6 +31,10 @@ public class KnowTheGoalActivity extends AppCompatActivity {
         setContentView(R.layout.global_start_know_goal);
         setSupportActionBar((Toolbar) findViewById(R.id.global_start_toolbar));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        collapsingToolbarLayout = findViewById(R.id.global_start_collapsing_toolbar);
+        collapsingToolbarLayout.setTitle("");
+        getSupportActionBar().setTitle("");
 
         myContext = this;
         btnNext = (Button) findViewById(R.id.btn_next);

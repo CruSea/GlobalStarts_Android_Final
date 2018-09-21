@@ -22,8 +22,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
-import com.android.volley.misc.Utils;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 

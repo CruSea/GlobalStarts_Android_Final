@@ -5,8 +5,11 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Rect;
+import android.os.Build;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
+import android.text.Html;
+import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
@@ -69,6 +72,16 @@ public class Util {
     public static void showToastMessageShort(Context context, String message){
         Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
     }
+
+    public static Spanned unescape(String description) {
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
+            return Html.fromHtml(description.replaceAll("[\\r\\n]+", "<br><br>"), Html.FROM_HTML_MODE_LEGACY);
+        }
+        else{
+            return Html.fromHtml(description.replaceAll("[\\r\\n]+", "<br><br>"));
+        }
+    }
+
 
 
 }

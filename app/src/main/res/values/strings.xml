@@ -17,22 +17,19 @@
 
     <string name="build_spiritual_movement_1">
         Jesus trained and equipped men and women and challenged them
-                                to help fulfil the Great Commission. Many of them were faithful to
+                                to help fulfill the Great Commission. Many of them were faithful to
                                 do what God had called them to do and that is the reason we know
                                 Jesus today. We want to continue that call by building spiritual
                                 movements!
     </string>
 
         <string name="build_spiritual_movement_2">
-              A spiritual movement is a group of students and adults who are
-        walking by faith in the power of the Holy Spirit, sharing their faith,
-        and discipling those who respond. Spiritual leaders are developed
-        and lives, campuses and countries are changed for eternity!
+             A spiritual movement is God working through a team of like-hearted disciples to win, build and send toward the fulfillment of the Great Commission.
     </string>
         <string name="build_spiritual_movement_3">
-         We want to encourage students to fall in love with Jesus and
-    challenge them to become spiritual multipliers at their high schools
-    and then continue to multiply their faith for a lifetime!
+         Building a movement involves encouraging students to fall in love with Jesus, walk by faith in the the power of the Holy Spirit,
+            and become spiritual multipliers at their high schools by sharing their faith and discipling those who respond.
+            As a result, God will change lives, campuses and countries for eternity as students multiply their faith for a lifetime.
     </string>
 
 
@@ -50,8 +47,7 @@
     </string>
 
       <string name="take_action_prayer">
-          1. When you see the needs of students, how does it motivate you to pray? \n \n
-          2. As you trust God to start and build a student movement, what prayer strategy will you develop?
+          1. When you see the needs of students, how does it motivate you to pray?\n\n2. As you trust God to start and build a student movement, what prayer strategy will you develop? \n
     </string>
 
     <string name="take_action_find_others">
@@ -88,7 +84,7 @@
         2.	 Go to where students are and develop relationships, praying that God will raise up spiritually interested students. \n \n
         3.	 Where can you fnd Christian teenagers who you can challenge and train to reach out to their friends at school? \n \n
         4.	 What churches can you work alongside or partner with to train their students? \n \n
-        5.	 What activities and outreaches can you have that Christian students can invite their friends to attend? \n \n
+        5.	 What activities and outreaches can you have that Christian students can invite their unbelieving friends to attend? \n \n
     </string>
 
     <string name="take_action_build">
@@ -100,7 +96,7 @@
 
     <string name="take_action_send">
         1.	 What are ways that students can take ownership of the ministry and develop into multipliers of the faith? \n \n
-        2.	 What can you do to help develop students to be the leaders God desires them to be those who will go into all the world and make disciples? \n \n
+        2.	 What can you do to help develop students to be the leaders God desires them to be; those who will go into all the world and make disciples? \n \n
     </string>
 
 
@@ -119,6 +115,129 @@ to develop lifetime laborers who will go into all the world
 and make disciples of all nations? \n
     </string>
 
+
+
+
+
+
+
+
+    <!--
+    Each sentence
+    Page 1 - Intro Activity
+    -->
+
+    <string name="intro_page_1">
+        Can you imagine a day when the teenagers of your country would have the opportunity to ...
+    </string>
+
+    <string name="intro_page_2">
+        <![CDATA[
+            If that is your desire or if you dare to believe God to raise up teenagers to become leaders on their campuses and to be involved in helping reach the world, then get on your knees and pray! \nWith faith and dependence on the Lord, take these principles and use them in your country and watch what God will do in and through the lives of teenagers.
+        ]]>
+    </string>
+
+
+    <string name="gods_heart_page_1">
+        <![CDATA[
+        As a youth, God called <b> Josiah </b> to turn an evil and idolatrous nation to one who sought after God.
+        ]]>
+    </string>
+
+    <string name="gods_heart_page_2">
+        <![CDATA[
+        <b> Mary</b> was chosen as a young girl to give birth to the Savior of the world!
+        ]]>
+    </string>
+
+    <string name="gods_heart_page_3">
+        <![CDATA[
+        <b> David</b>, a teenage shepherd boy, was called to fight a powerful nation and defeat it to establish the kingdom of Israel.
+        ]]>
+    </string>
+
+
+    <string name="learn_youth_page_1">
+        <![CDATA[
+        <b>Jesus</b> modeled this. In John 4:6-18 Jesus knew the Samaritan woman’s greatest need was for love, affection and a sense of worth. He knew it was not being fulfilled through relationships with men,
+        so He offered her Living Water to fill her deepest need and her spiritual thirst.
+        ]]>
+    </string>
+
+    <string name="learn_youth_page_2">
+        <![CDATA[
+        <b>Zacchaeus</b> was a sinner but also curious as to whom Jesus was. Knowing that Zacchaeus needed to know his value and worth, Jesus went to his home and ministered to him. This brought him to repentance and salvation (Luke 19:1-10).
+        ]]>
+    </string>
+
+    <string name="learn_youth_page_3">
+        <![CDATA[
+        <b>Jesus</b> modeled the importance of knowing the real issues in the lives of those He ministered to and we must do the same. With the youth culture changing so rapidly we must constantly observe and ask questions to know how we can minister effectively. We must ASK, LOOK and LISTEN.
+        ]]>
+    </string>
+
+    <string name="learn_youth_page_4">
+        <![CDATA[
+        <b>Ask</b> good questions: What do teenagers think about? What are their beliefs and values? How do they get their needs met? What are their goals in life? What are their greatest fears?
+         ]]>
+    </string>
+
+    <string name="learn_youth_page_5">
+        <![CDATA[
+        <b>Look</b> and observe: How and where do they spend their time? What do they do for fun? How do they act around their peers, their parents or authority? How do they dress?
+         ]]>
+    </string>
+
+    <string name="learn_youth_page_6">
+        <![CDATA[
+        <b>Listen</b> carefully: Listen to their conversations with others. What do they talk about? What is important to them? \n
+         ]]>
+    </string>
+
+
+    <string name="know_the_goal_page_1">
+        <![CDATA[
+        <b>Jesus</b> went from town to town preaching the Good News. He spoke to the masses and ate dinner with individuals. He chose 12 ordinary men to disciple, train and pour His life into. Jesus modeled His life and taught them to love, serve, pray, and minister to others. Then He equipped them with the Word and the Holy Spirit and sent them out to disciple the nations.
+         ]]>
+    </string>
+
+    <string name="know_the_goal_page_1_1">
+        <![CDATA[
+        <b>Jesus</b> had three main aspects to His movement.
+         ]]>
+    </string>
+
+    <string name="know_the_goal_page_2">
+        <![CDATA[
+        <b>Win</b> people to Himself through evangelism
+         ]]>
+    </string>
+
+    <string name="know_the_goal_page_3">
+        <![CDATA[
+        <b>Build</b> disciples by teaching them to be in relationship with Him and training them to do the work that He was doing
+         ]]>
+    </string>
+
+    <string name="know_the_goal_page_4">
+        <![CDATA[
+        <b>Send</b> them out to multiply their faith and help fulfill the Great Commission
+         ]]>
+    </string>
+
+
+    <string name="win_sowing_with_page_1">
+        <![CDATA[
+        Sowing and Evangelism <b>WITH</b> Access to the School
+         ]]>
+    </string>
+
+
+    <string name="win_sowing_without_page_1">
+        <![CDATA[
+         Sowing and Evangelism <b>WITHOUT</b> Access to the School
+         ]]>
+    </string>
 
 
 

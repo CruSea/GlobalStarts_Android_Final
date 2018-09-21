@@ -101,7 +101,7 @@ public class MainActivity extends Activity implements BottomNavigationView.OnNav
         mainMenuItems.add(new MainMenuItem("Learn About The Youth Culture","In order to minister most effectively"));
         mainMenuItems.add(new MainMenuItem("Begin with Prayer","how does it motivate you to pray?"));
         mainMenuItems.add(new MainMenuItem("Find Others to Help","Jesus chose 12 disciples and many others"));
-        mainMenuItems.add(new MainMenuItem("What is the goal?","Mobilize Teenagers to Impact their World"));
+        mainMenuItems.add(new MainMenuItem("What is the Goal?","Mobilize Teenagers to Impact their World"));
         mainMenuItems.add(new MainMenuItem("Build Spiritual Movements","Mobilize Teenagers to Impact their World"));
         mainMenuItems.add(new MainMenuItem("Movement Plan","Mobilize Teenagers to Impact their World"));
 

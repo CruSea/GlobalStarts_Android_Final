@@ -10,7 +10,7 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/news_detail_app_bar_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:fitsSystemWindows="true">
 
@@ -21,12 +21,13 @@
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleMarginStart="48dp"
+            app:title=""
             app:expandedTitleMarginEnd="64dp"
             android:fitsSystemWindows="true">
 
             <ImageView
                 android:id="@+id/global_start_image"
-                android:src="@drawable/global_start_find_others"
+                android:src="@drawable/img_know_goal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
@@ -37,6 +38,7 @@
                 android:id="@+id/global_start_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
+                app:title=""
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                 app:layout_collapseMode="pin" />
 
@@ -83,16 +85,8 @@
                         android:background="@color/colorPrimary"
                         android:textColor="@color/white"
                         android:textSize="22dp"
-                        android:text="Know the Goal"
-
+                        android:text="What is the Goal?"
                         android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
-
-
-
-
-
-
-
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -100,13 +94,13 @@
                         android:gravity="center_horizontal"
                         android:orientation="vertical">
 
-                        <TextView
+                        <ds.gcme.com.globalstart.Helpers.MyHtmlTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_marginTop="5dp"
-                            android:text="Jesus went from town to town preaching the Good News. He spoke to the masses and ate dinner with individuals. He chose 12 ordinary men to disciple, train and pour His life into. Jesus modeled His life and taught them to love, serve, pray, and minister to others. Then He equipped them with the Word and the Holy Spirit and sent them out to disciple the nations."
+                            android:text="@string/know_the_goal_page_1"
                             android:textColor="@color/black"
                             android:textSize="18sp" />
 
@@ -119,15 +113,16 @@
                             android:layout_marginTop="20dp"
                             android:background="@color/colorPrimaryDark" />
 
-                        <TextView
+                        <ds.gcme.com.globalstart.Helpers.MyHtmlTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
-                            android:text="Jesus had three main aspects to His movement."
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/know_the_goal_page_1_1"
                             android:textColor="@color/black"
-                            android:textSize="16sp"
+                            android:textSize="18sp"
                             />
-
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -137,12 +132,12 @@
                             android:gravity="center_horizontal"
                             android:orientation="vertical">
 
-                            <TextView
+                            <ds.gcme.com.globalstart.Helpers.MyHtmlTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:gravity="center_horizontal"
-                                android:text="Win people to Himself through evangelism"
+                                android:text="@string/know_the_goal_page_2"
                                 android:textColor="@color/black"
                                 android:textSize="17sp"
                                 />
@@ -157,12 +152,12 @@
                                 android:textSize="17sp" />
 
 
-                            <TextView
+                            <ds.gcme.com.globalstart.Helpers.MyHtmlTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:gravity="center_horizontal"
-                                android:text="Build disciples by teaching them to be in relationship with Him and training them to do the work that He was doing"
+                                android:text="@string/know_the_goal_page_3"
                                 android:textColor="@color/black"
                                 android:textSize="18sp"
                                 />
@@ -178,12 +173,12 @@
                                 android:textSize="17sp" />
 
 
-                            <TextView
+                            <ds.gcme.com.globalstart.Helpers.MyHtmlTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:gravity="center_horizontal"
-                                android:text="Send them out to multiply their faith and help fulfill the Great Commission"
+                                android:text="@string/know_the_goal_page_4"
                                 android:textColor="@color/black"
                                 android:textSize="18sp" />
 
