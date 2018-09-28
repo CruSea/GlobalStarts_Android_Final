@@ -84,11 +84,20 @@ public class MovementPlan extends AppCompatActivity {
                     Toast.makeText(MovementPlan.this, "Please complete each section first.", Toast.LENGTH_LONG).show();
                 }
                 else{
+                    String content = "My Movement Plan \n \n" +
+                            "Vision \n" +
+                            "My Vision: \n " + userPrefManager.getVision() + "\n \n" +
+                            "Prayer \n" +
+                            "Prayer Strategy: \n " + userPrefManager.getMyPrayer() + "\n \n" +
+                            "Help \n" +
+                            "Who will help: \n " + userPrefManager.getMyHelp() + "\n \n" +
+                            "Win \n" +
+                            "Ways to reach students through relationships and evangelism: \n " + userPrefManager.getWin() + "\n \n" +
+                            "Build \n" +
+                            "How to create a ministry of discipleship: \n " + userPrefManager.getBuild() + "\n \n " +
+                            "Send \n" +
+                            "How students can lead locally and go globally: \n " + userPrefManager.getSend();
 
-                    String content = "My Vision: " + userPrefManager.getVision() + "\n \n" +
-                            "Prayer Strategy: " + userPrefManager.getMyPrayer() + "\n \n" +
-                            "My Help:  " + userPrefManager.getMyHelp() + "\n \n" + "Win Plan: " + userPrefManager.getWin() + "\n \n" +
-                            "Build Plan : " + userPrefManager.getBuild() + "\n \n " + "Send Plan: " + userPrefManager.getSend();
                     Intent sharingIntent = new Intent(Intent.ACTION_SEND);
                     sharingIntent.setType("text/plain");
                     sharingIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.movement_strategy));
